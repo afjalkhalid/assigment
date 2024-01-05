@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>web page</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <header>
+    <h1>Responsive Web Page</h1>
+  </header>
+
+  <nav>
+    <a href="#">Home</a>
+    <a href="#">About</a>
+    <a href="#">Contact</a>
+</nav>
+
+<section>
+  <div class="card1">
+      <img src="./pexels-pixabay-164710.jpg" height="300px" width="auto" alt="Image">
+      <h1>Sony soul air</h1>
+      <p>Lorem, ipsum dolor sit amet <br> consectetur adipisicing elit.</p>
+  </div>
+
+  <div class="card2">
+      <img src="./pexels-roshan-ravi-17610888.jpg" height="300px" width="auto" alt="Image">
+      <h1>Apple earpods pro</h1>
+      <p>Lorem, ipsum dolor sit amet <br> consectetur adipisicing elit.</p>
+  </div>
+
+  <div class="card3">
+      <img src="./pexels-torsten-dettlaff-437037.jpg" height="300px" width="auto" alt="Image">
+      <h1>Smart watch</h1>
+      <p>Lorem, ipsum dolor sit amet <br> consectetur adipisicing elit.</p>
+  </div>
+
+  <div id="resultCard" class="card"></div>
+
+  <label for="age">Enter your age:</label>
+  <input type="number" id="age" name="age">
+  <button onclick="checkAge()">Check Age</button>
+</section>
+
+
+<footer>
+  <p>&copy; 2024 Your Company</p>
+</footer>
+
+
+<script>
+  function checkAge() {
+      var age = document.getElementById("age").value;
+      var resultCard = document.getElementById("resultCard");
+
+      if (age >= 18) {
+          resultCard.innerHTML = "<h3>You are an adult</h3>";
+      } else {
+          resultCard.innerHTML = "<h3>You are a child</h3>";
+      }
+  }
+</script>
+
+</body>
+</html>
